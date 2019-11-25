@@ -28,6 +28,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: build   
+    
+
 - task: PublishPipelineArtifact@1
   inputs:
     path: $(System.DefaultWorkingDirectory)/CoreBot/bin/Debug/netcoreapp2.1/CoreBot.dll
