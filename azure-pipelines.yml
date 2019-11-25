@@ -33,7 +33,7 @@ steps:
   inputs:
     path: '$(Pipeline.Workspace)'
     # path: $(System.DefaultWorkingDirectory)/13.core-bot/bin/Release/netcoreapp2.1
-    artifact: CoreBot.dll
+    artifact: CoreBotDrop
 
 - task: VSTest@2
   inputs:
