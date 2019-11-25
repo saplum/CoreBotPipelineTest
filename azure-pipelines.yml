@@ -31,7 +31,7 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    path: $(System.DefaultWorkingDirectory)/CoreBot/bin/x64/Release
+    path: $(System.DefaultWorkingDirectory)/CoreBot/bin/Release/netcoreapp2.1
     artifact: CoreBot
 
 - task: VSTest@2
