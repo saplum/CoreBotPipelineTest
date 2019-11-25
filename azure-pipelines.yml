@@ -11,7 +11,7 @@ pool:
 
 variables:
   solution: '13.core-bot/CoreBot.sln'
-  buildPlatform: 'x64'
+  buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
 steps:
