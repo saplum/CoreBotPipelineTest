@@ -31,7 +31,7 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    path: '$(Pipeline.Workspace)'
+    path: '$(Pipeline.Workspace)/13.core-bot.bin/Release'
     # path: $(System.DefaultWorkingDirectory)/13.core-bot/bin/Release/netcoreapp2.1
     artifact: CoreBotDrop
 
