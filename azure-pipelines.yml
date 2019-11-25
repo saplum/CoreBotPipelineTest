@@ -11,7 +11,7 @@ pool:
 
 variables:
   solution: '13.core-bot/CoreBot.sln'
-  buildPlatform: 'Any CPU'
+  buildPlatform: 'x64'
   buildConfiguration: 'Release'
 
 steps:
@@ -31,7 +31,7 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    path: $(System.DefaultWorkingDirectory)/CoreBot/bin/Debug/netcoreapp2.1/CoreBot.dll
+    path: $(System.DefaultWorkingDirectory)/CoreBot/bin/x64/Release
     artifact: CoreBot
 
 - task: VSTest@2
